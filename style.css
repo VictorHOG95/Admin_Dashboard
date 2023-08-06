@@ -114,3 +114,11 @@ b {
 .warning {
   color: var(--color-warning);
 }
+
+.container {
+  display: grid;
+  width: 96%;
+  margin: 0 auto;
+  gap: 1.8rem;
+  grid-template-columns: 12rem auto 23rem;
+}
