@@ -120,7 +120,7 @@ b {
   width: 96%;
   margin: 0 auto;
   gap: 1.8rem;
-  grid-template-columns: 12rem auto 23rem;
+  grid-template-columns: 12rem auto 18rem;
 }
 
 aside {
@@ -206,18 +206,67 @@ aside .sidebar a.active span {
   margin-left: calc(1re - 3px);
 }
 
-aside .sidebar a:hover{
-    color: var(--color-primary);
+aside .sidebar a:hover {
+  color: var(--color-primary);
 }
 
-aside .sidebar a:hover span{
-    margin-left: 0.1rem;
+aside .sidebar a:hover span {
+  margin-left: 0.1rem;
 }
 
-aside .sidebar .message-count{
-    background-color: var(--color-danger);
-    padding: 2px 6px;
-    color: var(--color-white);
-    font-size: 11px;
-    border-radius: var(--border-radius-1);
+aside .sidebar .message-count {
+  background-color: var(--color-danger);
+  padding: 2px 6px;
+  color: var(--color-white);
+  font-size: 11px;
+  border-radius: var(--border-radius-1);
 }
+
+.right-section {
+  /* margin-top: 1.4rem; */
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  height: 88vh;
+  position: relative;
+  top: 6rem;
+
+  transition: all 0.3s ease;
+}
+
+.right-section .profile a {
+  display: flex;
+  align-items: center;
+  color: var(--color-info-dark);
+  height: 3.7rem;
+  gap: 1rem;
+  position: relative;
+  margin-left: 2rem;
+  transition: all 0.3s ease;
+}
+
+.right-section .profile a span {
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+
+.right-section .profile .user-profile {
+  justify-content: center;
+  text-align: center;
+  color: var(--color-info-dark);
+}
+
+.right-section .profile .profile-photo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.right-section .profile .info p{
+  margin: 1rem;
+}
+
