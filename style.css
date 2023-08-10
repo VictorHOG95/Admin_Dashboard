@@ -222,6 +222,27 @@ aside .sidebar .message-count {
   border-radius: var(--border-radius-1);
 }
 
+aside .sidebar .dark-mode {
+  cursor: pointer;
+  position: absolute;
+  bottom: 6rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-light);
+  border-radius: var(--border-radius-1);
+}
+
+aside .sidebar .dark-mode span {
+  font-size: 1.5rem;
+  display: table-cell;
+}
+
+aside .sidebar .dark-mode span.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: var(--border-radius-1);
+}
+
 .right-section {
   /* margin-top: 1.4rem; */
   background-color: var(--color-white);
@@ -266,7 +287,6 @@ aside .sidebar .message-count {
   margin-bottom: 1rem;
 }
 
-.right-section .profile .info p{
+.right-section .profile .info p {
   margin: 1rem;
 }
-
