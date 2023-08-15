@@ -243,6 +243,155 @@ aside .sidebar .dark-mode span.active {
   border-radius: var(--border-radius-1);
 }
 
+main {
+  position: relative;
+  top: 6rem;
+  height: 88vh;
+  border-radius: 15px;
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+}
+
+main .header-main {
+  display: flex;
+}
+
+main .header-main .searchBox {
+  /* border: solid 2px var(--color-univalle);
+  border-radius: 8px; */
+  margin-top: 0.5rem;
+  margin-left: 3rem;
+}
+
+
+
+main .header-main .searchBox span{
+  position: absolute;
+  top: 2%;
+  /* font-size: 30px; */
+  color: var(--color-primary);
+}
+
+main .header-main .searchBox input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 80px 0 30px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  background-color: transparent;
+}
+
+main .header-main .searchBox button {
+  position: absolute;
+  top: 1.1%;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 4px;
+  left: 260px;
+  font-size: 14px;
+  font-weight:400;
+  border: none;
+  padding: 8px 8px;
+  cursor: pointer;
+  /* left: 32%; */
+  
+  /* right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 6px;
+  background-color: #4070f4;
+  cursor: pointer; */
+}
+
+main .header-main .searchBox button:active {
+  transform: translateY(-50%) scale(0.98);
+}
+
+main .header-main .mail {
+  margin-left: auto;
+  color: var(--color-info-dark);
+  margin-top: 1.8rem;
+  margin-right: 3rem;
+}
+
+main > h2 {
+  margin: 3rem;
+}
+
+main .recent-courses,
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  place-items: center;
+  margin: 2rem;
+}
+
+main .course {
+  background-color: var(--color-light);
+  /* padding: var(--card-padding); */
+  /* padding-top: 1rem; */
+  /* border-radius: var(--card-border-radius); */
+  /* margin-top: 1rem; */
+  /* box-shadow: var(--box-shadow); */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  height: 200px;
+  border-radius: var(--border-radius-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .course img {
+  max-height: 80%;
+  border-radius: var(--border-radius-1);
+}
+
+main .course .info {
+  text-align: center;
+}
+
+main nav {
+  /* position: relative; */
+  width: 590px;
+  height: 40px;
+  /* background-color: #1b9c85; */
+  /* border-radius: var(--border-radius-1); */
+  /* box-shadow: var(--box-shadow); */
+
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+}
+
+main .nav-links {
+  list-style: none;
+  margin: auto;
+}
+
+main .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+main .nav-links a {
+  padding: 1rem;
+  border-radius: var(--border-radius-1);
+}
+
+main .nav-links a.active {
+  background-color: var(--color-light);
+}
+
 .right-section {
   /* margin-top: 1.4rem; */
   background-color: var(--color-white);
