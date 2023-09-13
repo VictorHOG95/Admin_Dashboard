@@ -263,16 +263,14 @@ main .header-main .searchBox {
   margin-left: 3rem;
 }
 
-
-
-main .header-main .searchBox span{
+main .header-main .searchBox span {
   position: absolute;
   top: 2%;
   /* font-size: 30px; */
   color: var(--color-primary);
 }
 
-main .header-main .searchBox input{
+main .header-main .searchBox input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -291,12 +289,12 @@ main .header-main .searchBox button {
   border-radius: 4px;
   left: 260px;
   font-size: 14px;
-  font-weight:400;
+  font-weight: 400;
   border: none;
   padding: 8px 8px;
   cursor: pointer;
   /* left: 32%; */
-  
+
   /* right: 20px;
   font-size: 16px;
   font-weight: 400;
@@ -438,4 +436,145 @@ main .nav-links a.active {
 
 .right-section .profile .info p {
   margin: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 95%;
+    grid-template-columns: 7rem auto 18rem;
+  }
+
+  aside .sidebar h3 {
+    display: none;
+  }
+
+  aside .sidebar a {
+    width: 5.6rem;
+  }
+
+  aside .sidebar a:last-child {
+    position: relative;
+    margin-top: 1.8rem;
+  }
+
+  main .recent-courses,
+  .courses {
+    grid-template-columns: auto auto;
+    /* gap: 0; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container{
+    width: 100%;
+    grid-template-columns: 1fr;
+    padding: 0 var(--padding-1);
+  }
+
+  aside{
+    position: fixed;
+    z-index: 3;
+    width: 15rem;
+    height: 100vh;
+    background-color: var(--color-white);
+    box-shadow: 1rem 3re 4rem var(--color-light);
+    animation: showMenu 0.4s ease forwards;
+    left: -100%;
+    display: none;
+  }
+
+  @keyframes showMEnu {
+    to{
+      left: 0;
+    }
+  }
+
+  aside .sidebar h3{
+    display: inline;
+  }
+
+  aside .sidebar a{
+    width: 100%;
+    height: 3.4rem;
+  }
+
+  aside .sidebar a:last-child{
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  aside .toggle .close{
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  main{
+    margin-top: 8rem;
+    padding: 0 1rem;
+  }
+
+  main .recent-courses,
+  .courses {
+    grid-template-columns: 1fr;
+    /* gap: 0; */
+  }
+
+  main .recent-courses{
+    /* aspect-ratio: 10/16; */
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    /* position: relative;
+    scroll-snap-type: x mandatory; */
+  }
+
+  main .recent-courses .course{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    scroll-snap-align: center;
+
+
+  
+    /* width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    scroll-snap-align: center; */
+  }
+
+  .right-section{
+    width: 94%;
+    margin: 0 auto 4rem;
+    background-color:transparent;
+  }
+
+  .right-section .profile{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    height: 4.6rem;
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+    padding: 0 var(--padding-1);
+    background-color: var(--color-white);
+    box-shadow: 0 1rem 1rem var(--color-light);
+  }
+
+  .right-section .profile a{
+    display: none;
+  }
+
+  .right-section .profile .user-profile .profile-photo{
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+
+  .right-section .profile .user-profile .info{
+    display: none;
+  }
 }
